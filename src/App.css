@@ -1,0 +1,9 @@
+.main_card {
+	width: 50vw;
+	height: calc(50vw * 3/4);
+	background-color: gray;
+	border-radius: 2rem;
+
+	display: flex;
+}
+
