@@ -5,5 +5,23 @@
 	border-radius: 2rem;
 
 	display: flex;
+	overflow: hidden;
 }
 
+.overview {
+	width: 30%;
+	background-color: red;
+	display: flex;
+
+	justify-content: center;
+}
+
+.overview > div {
+	width: 80%;
+	height: fit-content;
+	display: flex;
+}
+
+.search_bar {
+	width: 100%;
+}

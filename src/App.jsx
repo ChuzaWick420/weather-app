@@ -14,7 +14,10 @@ function Details() {
 function Overview() {
 	return (
 		<div className="overview">
-
+			<div>
+				<span className="material-icons">search</span>
+				<input className="search_bar" type="text" placeholder="Search for places" />
+			</div>
 		</div>
 	);
 }
