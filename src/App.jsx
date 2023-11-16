@@ -2,8 +2,6 @@
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
 import './App.css'
-import "./SearchBar.css"
-import "./Overview.css"
 
 function Details() {
 	return (
@@ -22,11 +20,41 @@ function SearchBar() {
 	);
 }
 
+function Temperature() {
+	return (
+		<>
+			<img className="weather_ico" />
+			<div>
+				<h2 className="UnitValue"></h2>
+				<h2 className="UnitType">&deg;C</h2>
+			</div>
+		</>
+	);
+}
+function Statistics() {
+	return (
+		<div className="stats">
+			<div>
+				<img />
+				<p></p>
+			</div>
+			<div className="rain_prob">
+				<img />
+				<p></p>
+			</div>
+		</div>
+	);
+}
+
 function Overview() {
 	return (
 		<div className="overview">
 			<SearchBar />
-			<img className="weather_ico" />
+			<Temperature />
+			<Statistics />
+			<div className="place_img">
+				<p className="place_name">London</p>
+			</div>
 		</div>
 	);
 }

@@ -1,0 +1,11 @@
+.overview > div {
+	width: 80%;
+	height: fit-content;
+	display: flex;
+}
+
+.search_bar {
+	width: 100%;
+    border: none;
+    background: transparent;
+}
