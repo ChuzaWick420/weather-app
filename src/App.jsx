@@ -3,10 +3,25 @@
 // import viteLogo from '/vite.svg'
 import './App.css'
 
+function ControlBar() {
+	return (
+		<div className="control_bar">
+			<p>Today</p>
+			<p>Week</p>
+			<div className="separator"></div>
+			<p className="temp_units">&deg;C</p>
+			<p className="temp_units">&deg;F</p>
+			<div>
+				<span className="material-icons">account_circle</span>
+			</div>
+		</div>
+	);
+}
+
 function Details() {
 	return (
 		<div className="details">
-
+			<ControlBar />
 		</div>
 	);
 }

@@ -1,4 +1,5 @@
 @import url("./Overview.css");
+@import url("./Details.css");
 
 .main_card {
 	width: 50vw;

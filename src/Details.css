@@ -1,0 +1,11 @@
+@import url(./Controlbar.css);
+
+.details {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.details > div {
+    width: 90%;
+}

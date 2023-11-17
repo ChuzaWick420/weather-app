@@ -1,0 +1,14 @@
+.control_bar {
+	height: fit-content;
+	display: flex;
+	align-items: center;
+}
+
+.control_bar .separator {
+	flex-grow: 1;
+}
+
+.control_bar span {
+	width: 24px;
+	height: 24px;
+}
