@@ -6,10 +6,40 @@
     /* background-color: white; */
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 5px;
+    grid-template-rows: 1fr 1fr;
+    gap: 8px;
 }
 
 .panel {
     background-color: white;
-    height: 6rem;
+    border-radius: 5px;
+}
+
+.panel img {
+    width: 32px;
+    aspect-ratio: 1;
+}
+
+.stat_name {
+    color: gray;
+    font-size: 0.75rem;
+}
+
+.panel > * {
+    margin: 0.75rem;
+}
+
+.sun {
+    display: flex;
+}
+
+.sun_time {
+    padding-inline: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sun_time_left {
+    color: gray;
+    font-size: 0.85rem;
 }

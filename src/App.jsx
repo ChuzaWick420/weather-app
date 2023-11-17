@@ -6,14 +6,13 @@ import './App.css'
 function Detail_panel() {
 	return (
 		<div className="panel">
-			<p className="stat_name"></p>
+			<p className="stat_name">Test</p>
 			<p>
 				<span className="value"></span>
-				<span className="unit"></span>
+				<span className="unit">%</span>
 			</p>
-			<p className="condition">
-				<span className="emote"></span>
-			</p>
+			<span className="condition"></span>
+			<span className="emote"></span>
 		</div>
 	);
 }
@@ -27,18 +26,38 @@ function Highlights() {
 			</div>
 
 			<div className="panel_list">
-				<div className="panel"></div>
+				<div className="panel">
+					<p className="stat_name">UV Index</p>
+				</div>
 
 				<div className="panel">
 					<p className="stat_name">Wind Speed</p>
 					<p>
-						<span className="value"></span>
+						<span className="value">72</span>
 						<span className="unit">km/h</span>
 					</p>
+					<div>
+						<img src="https://cdn-icons-png.flaticon.com/256/9356/9356230.png" />
+						<span className="place_name"></span>
+					</div>
 				</div>
 
 				<div className="panel">
-					<p className="stat_name"></p>
+					<p className="stat_name">Sunrise and Suset</p>
+					<div className="sun">
+						<img src="https://cdn1.iconfinder.com/data/icons/weather-from-clouds-line/64/cloud-element-weather-sunrise-sun-up-rise-512.png" />
+						<div className="sun_time">
+							<span className="sun_time_current">6:49 PM</span>
+							<span className="sun_time_left">2m</span>
+						</div>
+					</div>
+					<div className="sun">
+						<img src="https://cdn-icons-png.flaticon.com/256/3920/3920799.png" />
+						<div className="sun_time">
+							<span className="sun_time_current">6:49 PM</span>
+							<span className="sun_time_left">2m</span>
+						</div>
+					</div>
 				</div>
 
 				<Detail_panel />

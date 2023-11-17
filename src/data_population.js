@@ -5,7 +5,7 @@ function populate (data) {
 		document.querySelector(".stats img")
 	];
     
-    const week_days = document.querySelectorAll(".day");
+    // const week_days = document.querySelectorAll(".day");
 
     //populates
     target_icons[0].src = 
@@ -16,11 +16,18 @@ function populate (data) {
     document.querySelector(".rain_prob > img").src =
     `https://openweathermap.org/img/wn/09d.png`
 
+    //overview
     document.querySelector(".UnitValue").innerHTML = (data.main.temp - 273).toFixed(0);
     document.querySelector(".stats p").innerHTML = data.weather[0].description;
     document.querySelector(".place_name").innerHTML = data.name + ", " + data.sys.country;
     document.querySelector(".rain_prob > p").innerHTML = "Rain - " + data.main.humidity + "%";
 
+    //details panel
+    document.querySelector(".panel:nth-of-type(4) .stat_name").innerHTML = "Humidity";
+    document.querySelector(".panel:nth-of-type(4) .value").innerHTML = data.main.humidity;
+    document.querySelector(".panel:nth-of-type(4) .unit").innerHTML = "%";
+    document.querySelector(".panel:nth-of-type(4) .condition").innerHTML = "Normal";
+    document.querySelector(".panel:nth-of-type(4) .emote").innerHTML = "😄";
 }
 
 export default populate
