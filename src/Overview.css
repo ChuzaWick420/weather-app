@@ -1,5 +1,6 @@
 @import url("./SearchBar.css");
 @import url("./Temperature.css");
+@import url("./Statistics.css");
 
 .overview {
 	width: 30%;
@@ -31,23 +32,4 @@
     color: white;
     width: 100%;
     text-align: center;
-}
-
-.stats {
-    display: flex;
-    flex-direction: column;
-}
-
-.stats > div {
-    display: flex;
-    align-items: center;
-}
-
-.stats img {
-    width: 2rem;
-    aspect-ratio: 1;
-}
-
-.stats p {
-    margin: 0;
 }
