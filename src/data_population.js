@@ -5,6 +5,8 @@ function populate (data) {
 		document.querySelector(".stats img")
 	];
     
+    const week_days = document.querySelectorAll(".day");
+
     //populates
     target_icons[0].src = 
     target_icons[1].src =

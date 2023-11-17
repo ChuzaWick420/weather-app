@@ -1,9 +1,12 @@
 @import url(./Controlbar.css);
+@import url(./weekdays.css);
+@import url(./detail_panels.css);
 
 .details {
     width: 100%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .details > div {

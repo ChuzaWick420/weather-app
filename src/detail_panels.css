@@ -1,0 +1,15 @@
+.highlights > h2 {
+    font-size: 1rem;
+}
+
+.panel_list {
+    /* background-color: white; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
+}
+
+.panel {
+    background-color: white;
+    height: 6rem;
+}

@@ -3,6 +3,76 @@
 // import viteLogo from '/vite.svg'
 import './App.css'
 
+function Detail_panel() {
+	return (
+		<div className="panel">
+			<p className="stat_name"></p>
+			<p>
+				<span className="value"></span>
+				<span className="unit"></span>
+			</p>
+			<p className="condition">
+				<span className="emote"></span>
+			</p>
+		</div>
+	);
+}
+
+function Highlights() {
+	
+	return (
+		<>
+			<div className="highlights">
+				<h2>Today's Highlights</h2>
+			</div>
+
+			<div className="panel_list">
+				<div className="panel"></div>
+
+				<div className="panel">
+					<p className="stat_name">Wind Speed</p>
+					<p>
+						<span className="value"></span>
+						<span className="unit">km/h</span>
+					</p>
+				</div>
+
+				<div className="panel">
+					<p className="stat_name"></p>
+				</div>
+
+				<Detail_panel />
+				<Detail_panel />
+				<Detail_panel />
+			</div>
+		</>
+	);
+}
+
+function WeekWeatherBar() {
+
+	const days = [];
+
+	for (let i = 0; i < 7; i++) {
+		days.push(
+			<div key={i.toString()} className="day">
+				<p className="dayname">Mon</p>
+				<img className="day_weather_ico" />
+				<p className="temp">
+					<span className="current">42</span>
+					<span className="low">69</span>
+				</p>
+			</div>
+		);
+	}
+
+	return (
+		<div className="weekdays">
+			{days}
+		</div>
+	);
+}
+
 function ControlBar() {
 	return (
 		<div className="control_bar">
@@ -22,6 +92,8 @@ function Details() {
 	return (
 		<div className="details">
 			<ControlBar />
+			<WeekWeatherBar />
+			<Highlights />
 		</div>
 	);
 }
