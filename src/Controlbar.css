@@ -2,6 +2,7 @@
 	height: fit-content;
 	display: flex;
 	align-items: center;
+	gap: 10px;
 }
 
 .control_bar .separator {
@@ -11,4 +12,13 @@
 .control_bar span {
 	width: 24px;
 	height: 24px;
+}
+
+.temp_units {
+	background-color: cyan;
+	width: 24px;
+	height: 24px;
+	border-radius: 50%;
+	display: grid;
+	place-items: center;
 }

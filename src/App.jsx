@@ -9,8 +9,8 @@ function ControlBar() {
 			<p>Today</p>
 			<p>Week</p>
 			<div className="separator"></div>
-			<p className="temp_units">&deg;C</p>
-			<p className="temp_units">&deg;F</p>
+			<span className="temp_units">&deg;C</span>
+			<span className="temp_units">&deg;F</span>
 			<div>
 				<span className="material-icons">account_circle</span>
 			</div>
