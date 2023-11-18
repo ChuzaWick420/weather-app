@@ -28,6 +28,13 @@ function populate (data) {
     document.querySelector(".panel:nth-of-type(4) .unit").innerHTML = "%";
     document.querySelector(".panel:nth-of-type(4) .condition").innerHTML = "Normal";
     document.querySelector(".panel:nth-of-type(4) .emote").innerHTML = "😄";
+    
+    document.querySelector(".panel:nth-of-type(5) .stat_name").innerHTML = "Visibility";
+    document.querySelector(".panel:nth-of-type(5) .value").innerHTML = data.visibility / 1000.0;
+    document.querySelector(".panel:nth-of-type(5) .unit").innerHTML = "Km";
+    document.querySelector(".panel:nth-of-type(5) .condition").innerHTML = "Average";
+    document.querySelector(".panel:nth-of-type(5) .emote").innerHTML = "😄";
+
 }
 
 export default populate

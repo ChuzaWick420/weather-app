@@ -29,6 +29,19 @@
     margin: 0.75rem;
 }
 
+.panel .value {
+    font-size: 2rem;
+}
+
+.panel .condition {
+    font-size: 0.6rem;
+    font-weight: bold;
+}
+
+.panel .emote {
+    font-size: 0.6rem;
+}
+
 .sun {
     display: flex;
 }
