@@ -46,7 +46,7 @@
     display: flex;
 }
 
-.sun_time {
+.sun_rise, .sun_set {
     padding-inline: 5px;
     display: flex;
     flex-direction: column;

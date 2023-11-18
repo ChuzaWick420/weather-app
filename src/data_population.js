@@ -1,3 +1,63 @@
+function get_suntime(data) {
+   
+    document.querySelector(".panel:nth-of-type(3) .stat_name").innerHTML = "Sunrise & Sunset";
+    
+    let sun_rise = {
+        time : document.querySelector(".sun_rise .sun_time_current"),
+        gap : document.querySelector(".sun_rise .sun_time_left")
+    };
+    
+    let sun_set = {
+        time : document.querySelector(".sun_set .sun_time_current"),
+        gap : document.querySelector(".sun_set .sun_time_left")
+    };
+    
+    const unix_sunrise = data.sys.sunrise;
+    const unix_sunset = data.sys.sunset;
+    
+    let unit = "";
+    let hours;
+    let minutes;
+
+    const current_time = new Date();
+
+    const normal_sunrise = new Date(unix_sunrise * 1000);
+
+    hours = normal_sunrise.getHours();
+    minutes = normal_sunrise.getMinutes();
+
+    //time gap
+    sun_rise.gap.innerHTML = (hours - current_time.getHours()) + " h " + (minutes - current_time.getMinutes()) + " m";
+    
+    if (hours >= 12){
+        hours -= 12;
+        unit = "PM";
+    }
+    else
+    unit="AM";
+
+    let sunrise = hours + ":" + minutes + unit;
+    
+    const normal_sunset = new Date(unix_sunset * 1000);
+    
+    hours = normal_sunset.getHours();
+    minutes = normal_sunset.getMinutes();
+    
+    sun_set.gap.innerHTML = (hours - current_time.getHours()) + " h " + (minutes - current_time.getMinutes()) + " m";
+    
+    if (hours >= 12){
+        hours -= 12;
+        unit = "PM";
+    }
+    else
+        unit="AM";
+
+    let sunset = hours + ":" + minutes + unit;
+
+    sun_rise.time.innerHTML = sunrise;
+    sun_set.time.innerHTML = sunset;
+}
+
 function populate (data) {
     //gets elements
     const target_icons = [
@@ -23,6 +83,8 @@ function populate (data) {
     document.querySelector(".rain_prob > p").innerHTML = "Rain - " + data.main.humidity + "%";
 
     //details panel
+    get_suntime(data);
+
     document.querySelector(".panel:nth-of-type(4) .stat_name").innerHTML = "Humidity";
     document.querySelector(".panel:nth-of-type(4) .value").innerHTML = data.main.humidity;
     document.querySelector(".panel:nth-of-type(4) .unit").innerHTML = "%";
