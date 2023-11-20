@@ -6,9 +6,22 @@ function extract_icons (data, forecast_index) {
         
         let icon_id = data.data[i].weather.icon;
         let icon_url = `https://cdn.weatherbit.io/static/img/icons/${icon_id}.png`;
-        
+
         day_ico.src = icon_url;
     }
+
+    //current day
+    let icon_id = data.data[i].weather.icon;
+    
+    //gets elements
+	const target_icons = [
+		document.querySelector(".weather_ico"),
+		document.querySelector(".stats img")
+	];
+	
+	target_icons[0].src = 
+	target_icons[1].src =
+	`https://cdn.weatherbit.io/static/img/icons/${icon_id}.png`;
 }
 
 

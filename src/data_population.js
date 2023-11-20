@@ -94,18 +94,6 @@ function get_suntime(data) {
 }
 
 function populate (data) {
-	//gets elements
-	const target_icons = [
-		document.querySelector(".weather_ico"),
-		document.querySelector(".stats img")
-	];
-	
-	// const week_days = document.querySelectorAll(".day");
-
-	//populates
-	target_icons[0].src = 
-	target_icons[1].src =
-	`https://openweathermap.org/img/wn/${data.weather[0].icon}.png`;
 
 	//rain probability
 	document.querySelector(".rain_prob > img").src =
