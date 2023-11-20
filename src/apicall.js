@@ -1,18 +1,19 @@
 import populate from "./data_population.js"
 import airquality from "./air_quality.js";
-import get_five_days from "./forecast.js";
+import get_multi_days from "./forecast.js";
+import get_icons from "./icons.js";
 
 const key = "fb2a2791597a787e892e52f451e589a1";
 
-async function get_forecast(place) {
+async function get_forecast(lat, lon) {
 
-	const api_url = `https://api.openweathermap.org/data/2.5/forecast?q=${place}&appid=${key}`;
+	const api_url = `https://api.open-meteo.com/v1/dwd-icon?latitude=${lat}&longitude=${lon}&daily=temperature_2m_max,temperature_2m_min&timezone=auto`;
 
 	try {
 		let response = await fetch(api_url);
 		let data = await response.json();
 
-		get_five_days(data);
+		get_multi_days(data);
 	}
 	catch (err) {
 		console.log(err);
@@ -39,13 +40,16 @@ function get_weather(place, one_day = true) {
 			lat = result.coord.lat;
 			lon = result.coord.lon;
 			get_AQI(lat, lon);	
+
+			//7 days forecast
+			if (one_day != true) {
+				get_forecast(lat, lon);
+				// get_icons(lat, lon, 7);
+			}
+
 		})
 		.catch(err => console.log(err))
 	
-	//5 days forecast
-	if (one_day != true) {
-		get_forecast(place);
-	}
 }
 
 function get_AQI(lat, lon) {
