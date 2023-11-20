@@ -11,7 +11,7 @@ function extract_icons (data, forecast_index) {
     }
 
     //current day
-    let icon_id = data.data[i].weather.icon;
+    let icon_id = data.data[0].weather.icon;
     
     //gets elements
 	const target_icons = [
