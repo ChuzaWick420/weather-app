@@ -44,7 +44,7 @@ function get_weather(place, one_day = true) {
 			//7 days forecast
 			if (one_day != true) {
 				get_forecast(lat, lon);
-				// get_icons(lat, lon, 7);
+				get_icons(lat, lon, 7);
 			}
 
 		})

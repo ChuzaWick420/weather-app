@@ -1,3 +1,5 @@
+import get_uv from "./uv_index";
+
 function extract_icons (data, forecast_index) {
     
     for (let i = 0; i < forecast_index; i++) {
@@ -36,6 +38,7 @@ async function get_icons(lat, lon, forecast_index) {
         let response = await fetch(weatherbit_api);
         let data = await response.json();
         extract_icons(data, forecast_index);
+        get_uv(data);
     }
     catch (err) {
         console.log(err);
