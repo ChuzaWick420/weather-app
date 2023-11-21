@@ -11,86 +11,27 @@ function get_suntime(data) {
 	//sets stat's name
 	document.querySelector(".panel:nth-of-type(3) .stat_name").innerHTML = "Sunrise & Sunset";
 	
-	let sun_rise = {
-		time : document.querySelector(".sun_rise .sun_time_current"),
-		gap  : document.querySelector(".sun_rise .sun_time_left")
-	};
+	let sun_rise = document.querySelector(".sun_rise .sun_time_current");
 	
-	let sun_set = {
-		time : document.querySelector(".sun_set .sun_time_current"),
-		gap	 : document.querySelector(".sun_set .sun_time_left")
-	};
+	let sun_set =  document.querySelector(".sun_set .sun_time_current");
 	
 	const unix_sunrise = data.sys.sunrise;
 	const unix_sunset = data.sys.sunset;
 	
-	let unit = "";
-	let hours;
-	let minutes;
+	const date_format = Intl.DateTimeFormat('en-US', {
+		hour: "2-digit",
+		minute: "2-digit",
+		hour12: true
+	});
 
-	const current_time = new Date();
+	let sun_rise_time = date_format.format(unix_sunrise * 1000);
+	let sun_set_time = date_format.format(unix_sunset* 1000);
 
-	//sunrise
-	const normal_sunrise = new Date(unix_sunrise * 1000);
-
-	hours = normal_sunrise.getHours();
-	minutes = normal_sunrise.getMinutes();
-
-	//time gap
-	let gap_hours = (hours - (current_time.getUTCHours() + data.timezone / 3600.0));
-	let gap_minutes = 0;
-
-	if (gap_hours >= 0) {
-		gap_minutes = minutes - current_time.getMinutes();
-	}
-	else
-		gap_minutes = (60 - minutes) + current_time.getMinutes();
-
-	sun_rise.gap.innerHTML = gap_hours + " h " + gap_minutes + " m";
-	
-	//24 hours to 12 hours format
-	if (hours >= 12){
-		hours -= 12;
-		unit = "PM";
-	}
-	else
-		unit="AM";
-
-	//sets the formatted time
-	let sunrise = hours + ":" + minutes + unit;
-	
-	//sunset
-	const normal_sunset = new Date(unix_sunset * 1000);
-	
-	hours = normal_sunset.getHours();
-	minutes = normal_sunset.getMinutes();
-	
-	//time gap
-	gap_hours = (hours - (current_time.getUTCHours() + data.timezone / 3600.0));
-	gap_minutes = 0;
-
-	if (gap_hours >= 0) {
-		gap_minutes = minutes - current_time.getMinutes();
-	}
-	else
-		gap_minutes = (60 - minutes) + current_time.getMinutes();
-
-	sun_set.gap.innerHTML = gap_hours + " h " + gap_minutes + " m";
-
-	//24 hours to 12 hours conversion
-	if (hours >= 12){
-		hours -= 12;
-		unit = "PM";
-	}
-	else
-		unit="AM";
-
-	//sets formatted time
-	let sunset = hours + ":" + minutes + unit;
+	let current_time = date_format.format();
 
 	//sets the time on page
-	sun_rise.time.innerHTML = sunrise;
-	sun_set.time.innerHTML = sunset;
+	sun_rise.innerHTML = sun_rise_time;
+	sun_set.innerHTML = sun_set_time;
 }
 
 function populate (data) {

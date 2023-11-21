@@ -60,14 +60,12 @@ function Highlights() {
 						<img src="https://cdn1.iconfinder.com/data/icons/weather-from-clouds-line/64/cloud-element-weather-sunrise-sun-up-rise-512.png" />
 						<div className="sun_rise">
 							<span className="sun_time_current">6:49 PM</span>
-							<span className="sun_time_left">2m</span>
 						</div>
 					</div>
 					<div className="sun">
 						<img src="https://cdn-icons-png.flaticon.com/256/3920/3920799.png" />
 						<div className="sun_set">
 							<span className="sun_time_current">6:49 PM</span>
-							<span className="sun_time_left">2m</span>
 						</div>
 					</div>
 				</div>

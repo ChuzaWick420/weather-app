@@ -51,10 +51,5 @@
 .sun_rise, .sun_set {
     padding-inline: 5px;
     display: flex;
-    flex-direction: column;
-}
-
-.sun_time_left {
-    color: gray;
-    font-size: 0.85rem;
+    align-items: center;
 }
