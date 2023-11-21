@@ -95,10 +95,6 @@ function get_suntime(data) {
 
 function populate (data) {
 
-	//rain probability
-	document.querySelector(".rain_prob > img").src =
-	`https://openweathermap.org/img/wn/09d.png`
-
 	//overview
 	document.querySelector(".UnitValue").innerHTML = (data.main.temp - 273).toFixed(0);
 	document.querySelector(".stats p").innerHTML = data.weather[0].description;

@@ -22,6 +22,10 @@ function extract_icons (data, forecast_index) {
 	target_icons[0].src = 
 	target_icons[1].src =
 	`https://cdn.weatherbit.io/static/img/icons/${icon_id}.png`;
+
+    	//rain probability
+	document.querySelector(".rain_prob > img").src =
+	`https://cdn.weatherbit.io/static/img/icons/u00d.png`
 }
 
 

@@ -28,6 +28,18 @@ function Highlights() {
 			<div className="panel_list">
 				<div className="panel">
 					<p className="stat_name">UV Index</p>
+					<div>
+						{/* <ul className="gauge_values">
+							<li>0</li>
+							<li>6</li>
+							<li>9</li>
+							<li>12</li>
+						</ul> */}
+						<div className="guage_secondary">
+							<span>50%</span>
+						</div>
+						<div className="fill_bar"></div>
+					</div>
 				</div>
 
 				<div className="panel">
