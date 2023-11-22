@@ -2,10 +2,13 @@
 @import url("./Temperature.css");
 @import url("./Statistics.css");
 
+@import url("./theme.css");
+
 .overview {
 	width: 30%;
-	background-color: rgb(31, 189, 189);
+	background-color: var(--primary-color);
 
+    color: var(--text-main);
 	display: flex;
     flex-direction: column;
     align-items: center;

@@ -15,7 +15,7 @@
 }
 
 .temp_units {
-	background-color: cyan;
+	background-color: var(--primary-color);
 	width: 24px;
 	height: 24px;
 	border-radius: 50%;
