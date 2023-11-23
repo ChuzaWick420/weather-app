@@ -34,6 +34,43 @@ function get_suntime(data) {
 	sun_set.innerHTML = sun_set_time;
 }
 
+function get_humidity(data) {
+	document.querySelector(".panel:nth-of-type(4) .stat_name").innerHTML = "Humidity";
+	document.querySelector(".panel:nth-of-type(4) .value").innerHTML = data.main.humidity;
+	document.querySelector(".panel:nth-of-type(4) .unit").innerHTML = "%";
+	let hum_condition = document.querySelector(".panel:nth-of-type(4) .condition");
+	let hum_emote = document.querySelector(".panel:nth-of-type(4) .emote");
+	
+	let hum_level = data.main.humidity;
+
+	switch (true) {
+		case (hum_level <= 20):
+			hum_condition.innerHTML = "Very Dry";
+			hum_emote.innerHTML = "🏜️🔥";
+			break;
+		case (hum_level <= 40):
+			hum_condition.innerHTML = "Dry";
+			hum_emote.innerHTML = "🌵🏜️";
+			break;
+		case (hum_level <= 60):
+			hum_condition.innerHTML = "Comfortable";
+			hum_emote.innerHTML = "😊🌿";
+			break;
+		case (hum_level <= 80):
+			hum_condition.innerHTML = "Humid";
+			hum_emote.innerHTML = "😅💧";
+			break;
+		case (hum_level <= 100):
+			hum_condition.innerHTML = "Very Humid";
+			hum_emote.innerHTML = "😓🌧️";
+			break;
+
+		Default:
+			hum_condition = "ERR";
+			break;
+	}
+}
+
 function populate (data) {
 
 	//overview
@@ -45,12 +82,7 @@ function populate (data) {
 	//details panel
 	get_suntime(data);
 	get_windspeed(data);
-
-	document.querySelector(".panel:nth-of-type(4) .stat_name").innerHTML = "Humidity";
-	document.querySelector(".panel:nth-of-type(4) .value").innerHTML = data.main.humidity;
-	document.querySelector(".panel:nth-of-type(4) .unit").innerHTML = "%";
-	document.querySelector(".panel:nth-of-type(4) .condition").innerHTML = "Normal";
-	document.querySelector(".panel:nth-of-type(4) .emote").innerHTML = "😄";
+	get_humidity(data);
 	
 	document.querySelector(".panel:nth-of-type(5) .stat_name").innerHTML = "Visibility";
 	document.querySelector(".panel:nth-of-type(5) .value").innerHTML = data.visibility / 1000.0;
