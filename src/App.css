@@ -5,7 +5,7 @@
 	width: 50vw;
 	height: calc(50vw * 3/4);
 	background-color: var(--secondary-color);
-	border-radius: 2rem;
+	border-radius: 2vw;
 
 	display: flex;
 	overflow: hidden;

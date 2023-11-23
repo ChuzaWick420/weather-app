@@ -13,7 +13,7 @@
     align-items: center;
     justify-content: center;
     border-radius: 5px;
-    width: 4rem;
+    width: 5vw;
     aspect-ratio: 3/4;
 }
 
@@ -23,7 +23,7 @@
 }
 
 .day > img {
-    width: 32px;
+    width: 80%;
     aspect-ratio: 1;
 }
 

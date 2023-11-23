@@ -2,8 +2,6 @@
 @import url("./Temperature.css");
 @import url("./Statistics.css");
 
-@import url("./theme.css");
-
 .overview {
 	width: 30%;
 	background-color: var(--primary-color);
@@ -29,7 +27,7 @@
 }
 
 .place_img {
-    border-radius: 5px;
+    border-radius: 1vw;
     overflow: hidden;
     background-image: url("./assets/canada.jpg");
     background-repeat: no-repeat;
