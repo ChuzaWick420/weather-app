@@ -15,5 +15,5 @@
 }
 
 .control_bar > p, .highlights > h2 {
-    color: var(--primary-color);
+    color: var(--text-main);
 }
