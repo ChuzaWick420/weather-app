@@ -71,6 +71,8 @@ function get_humidity(data) {
 	}
 }
 
+
+
 function populate (data) {
 
 	//overview

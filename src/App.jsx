@@ -108,8 +108,8 @@ function ControlBar() {
 			<p>Today</p>
 			<p>Week</p>
 			<div className="separator"></div>
-			<span className="temp_units">&deg;C</span>
-			<span className="temp_units">&deg;F</span>
+			<button className="temp_units">&deg;C</button>
+			<button className="temp_units">&deg;F</button>
 			<div>
 				<span className="material-icons">account_circle</span>
 			</div>
