@@ -7,5 +7,5 @@
 }
 
 .search_bar::placeholder {
-    color: lightgray;
+    color: var(--text-sub);
 }
