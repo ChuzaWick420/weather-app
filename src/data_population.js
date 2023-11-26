@@ -1,3 +1,5 @@
+import temp_conversion_build from "./interactive";
+
 function get_windspeed(data) {
 
 	document.querySelector(".panel:nth-of-type(2) .stat_name").innerHTML = "Wind Speed";
@@ -91,6 +93,8 @@ function populate (data) {
 	document.querySelector(".panel:nth-of-type(5) .unit").innerHTML = "Km";
 	document.querySelector(".panel:nth-of-type(5) .condition").innerHTML = "Average";
 	document.querySelector(".panel:nth-of-type(5) .emote").innerHTML = "😄";
+
+	temp_conversion_build();
 
 }
 
