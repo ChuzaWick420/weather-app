@@ -14,7 +14,7 @@ function change_temp (caller_type, days = 7) {
     //update values
     let main_temp_txt = document.querySelector(".UnitValue");
     let main_temp = Number(main_temp_txt.textContent);
-    
+
     main_temp = (caller_type == 'C') ? toCel(main_temp) : toFaren(main_temp);
     main_temp_txt.textContent = main_temp;
 
@@ -32,6 +32,10 @@ function change_temp (caller_type, days = 7) {
         low_txt.textContent = low;
     }
 
+    for (let x = 1; x <= 2; x++) {
+        let button =  document.querySelector(`.temp_units:nth-of-type(${x})`);
+        button.classList.toggle("active");
+    }
 
 }
 

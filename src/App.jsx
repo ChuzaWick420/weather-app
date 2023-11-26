@@ -108,7 +108,7 @@ function ControlBar() {
 			<p>Today</p>
 			<p>Week</p>
 			<div className="separator"></div>
-			<button className="temp_units">
+			<button className="temp_units active">
 				<span>&deg;C</span>
 			</button>
 			<button className="temp_units">
