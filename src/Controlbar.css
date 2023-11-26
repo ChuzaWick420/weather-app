@@ -10,6 +10,7 @@
 }
 
 .temp_units {
+	color: var(--text-main);
 	background-color: var(--primary-color);
 	width: 24px;
 	height: 24px;
@@ -19,6 +20,7 @@
 	place-items: center;
 }
 
-.temp_units span {
-	color: var(--text-main);
+.active {
+	color: var(--primary-color);
+	background-color: var(--text-main);
 }
