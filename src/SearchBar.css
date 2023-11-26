@@ -2,4 +2,10 @@
 	width: 100%;
     border: none;
     background: transparent;
+    color: var(--text-main);
+    outline: none;
+}
+
+.search_bar::placeholder {
+    color: lightgray;
 }
