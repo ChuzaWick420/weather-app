@@ -29,12 +29,6 @@ function Highlights() {
 				<div className="panel">
 					<p className="stat_name">UV Index</p>
 					<div>
-						{/* <ul className="gauge_values">
-							<li>0</li>
-							<li>6</li>
-							<li>9</li>
-							<li>12</li>
-						</ul> */}
 						<div className="guage_secondary">
 							<span>50%</span>
 						</div>
@@ -114,8 +108,12 @@ function ControlBar() {
 			<p>Today</p>
 			<p>Week</p>
 			<div className="separator"></div>
-			<span className="temp_units">&deg;C</span>
-			<span className="temp_units">&deg;F</span>
+			<button className="temp_units">
+				<span>&deg;C</span>
+			</button>
+			<button className="temp_units">
+				<span>&deg;F</span>
+			</button>
 			<div>
 				<span className="material-icons">account_circle</span>
 			</div>

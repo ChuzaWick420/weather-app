@@ -9,16 +9,16 @@
 	flex-grow: 1;
 }
 
-.control_bar span {
-	width: 24px;
-	height: 24px;
-}
-
 .temp_units {
 	background-color: var(--primary-color);
 	width: 24px;
 	height: 24px;
 	border-radius: 50%;
+	border: none;
 	display: grid;
 	place-items: center;
+}
+
+.temp_units span {
+	color: var(--text-main);
 }
