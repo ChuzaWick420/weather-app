@@ -1,8 +1,4 @@
-@import "./SearchBar.css";
-@import "./Temperature.css";
-@import "./Statistics.css";
-
-@import "../../theme.css";
+@import "../theme.css";
 
 .overview {
 	width: 30%;

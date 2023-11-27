@@ -1,8 +1,4 @@
-@import "./Controlbar.css";
-@import "./weekdays.css";
-@import "./detail_panels.css";
-
-@import "../../theme.css";
+@import "../theme.css";
 
 .details {
     width: 100%;

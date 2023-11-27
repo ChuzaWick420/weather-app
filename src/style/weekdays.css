@@ -1,3 +1,5 @@
+@import "../theme.css";
+
 .weekdays {
     display: flex;
     gap: 0.2rem;

@@ -1,12 +1,15 @@
 // import { useState } from 'react'
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
+// import TestFunc from './test_comp';
 import './App.css'
-import Test from './components/maincard';
+import Main from './components/maincard';
+
 
 const App = () => {
+
 	return (
-		<Test />
+		<Main />
 	);
 }
 

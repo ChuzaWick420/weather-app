@@ -1,5 +1,14 @@
-@import "./components/overview/Overview.css";
-@import "./components/details/Details.css";
+@import "./style/Controlbar.css";
+@import "./style/detail_panels.css";
+@import "./style/Details.css";
+@import "./style/Overview.css";
+@import "./style/SearchBar.css";
+@import "./style/Statistics.css";
+@import "./style/Temperature.css";
+@import "./style/uv_index.css";
+@import "./style/weekdays.css";
+
+@import "./theme.css";
 
 .main_card {
 	width: 50%;
