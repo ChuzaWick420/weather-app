@@ -1,0 +1,31 @@
+.weekdays {
+    display: flex;
+    gap: 0.2rem;
+    color: var(--text-main);
+}
+
+.day {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary-color);
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    width: 5rem;
+    aspect-ratio: 3/4;
+}
+
+.day > p {
+    margin: 0;
+    font-size: 0.75rem;
+}
+
+.day > img {
+    width: 70%;
+    aspect-ratio: 1;
+}
+
+.low {
+    color: var(--text-sub);
+    font-size: 0.6rem;
+}
