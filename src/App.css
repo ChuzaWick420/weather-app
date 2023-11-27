@@ -1,8 +1,8 @@
-@import url("./Overview.css");
-@import url("./Details.css");
+@import "./components/overview/Overview.css";
+@import "./components/details/Details.css";
 
 .main_card {
-	width: 50vw;
+	width: 50%;
 	aspect-ratio: 4/3;
 	background-color: var(--secondary-color);
 	border-radius: 2vw;
@@ -11,8 +11,11 @@
 	overflow: hidden;
 }
 
-@media (max-width < 1300px) {
+/*On hand held devices, the height > width*/
+@media (max-width: 1080px) {
     .main_card {
+		width: 60%;
 		flex-direction: column;
+		aspect-ratio: 3/4;
 	}
 }

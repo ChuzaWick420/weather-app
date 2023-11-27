@@ -1,8 +1,6 @@
-@import url("./theme.css");
-
 .weekdays {
     display: flex;
-    gap: 5px;
+    gap: 0.2rem;
     color: var(--text-main);
 }
 
@@ -13,7 +11,7 @@
     align-items: center;
     justify-content: center;
     border-radius: 5px;
-    width: 5vw;
+    width: 5rem;
     aspect-ratio: 3/4;
 }
 
@@ -30,21 +28,4 @@
 .low {
     color: var(--text-sub);
     font-size: 0.6rem;
-}
-
-@media not (min-width: 1300px) {
-    .weekdays {
-        flex-wrap: wrap;
-    }
-    .day {
-        width: 5vw;
-    }
-
-    .day > p{
-        font-size: 2vh;
-    }
-
-    .low {
-        font-size: calc(2vh * 80 / 100);
-    }
 }

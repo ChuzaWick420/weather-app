@@ -1,26 +1,23 @@
-@import url("./uv_index.css");
-
-@import url("./theme.css");
+@import "./uv_index.css";
 
 .highlights > h2 {
     font-size: 1rem;
 }
 
 .panel_list {
-    /* background-color: white; */
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    gap: 8px;
+    gap: 0.5rem;
 }
 
 .panel {
     background-color: var(--primary-color);
-    border-radius: 5px;
+    border-radius: 1.5vw;
 }
 
 .panel img {
-    width: 32px;
+    width: 2rem;
     aspect-ratio: 1;
 }
 
@@ -30,7 +27,7 @@
 }
 
 .panel > * {
-    margin: 0.75rem;
+    margin: 0.5rem;
 }
 
 .panel .value {
