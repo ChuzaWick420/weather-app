@@ -32,9 +32,9 @@
 .fill_bar {
     background-color: var(--secondary-color);
     position: absolute;
-    width: 140%;
-    height: 100%;
-    right: -20%;
+    width: 200%;
+    height: 200%;
+    right: -50%;
     top: 100%;
     z-index: 0;
     transform-origin: top center;
