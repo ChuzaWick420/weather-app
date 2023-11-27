@@ -9,3 +9,7 @@
 .search_bar::placeholder {
     color: var(--text-sub);
 }
+
+.searchBar span {
+    font-size: 1rem;
+}

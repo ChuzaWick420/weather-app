@@ -133,7 +133,7 @@ function Details() {
 
 function SearchBar() {
 	return (
-		<div>
+		<div className="searchBar">
 			<span className="material-icons">search</span>
 			<input className="search_bar" type="text" placeholder="Search for places" />
 		</div>
@@ -144,7 +144,7 @@ function Temperature() {
 	return (
 		<>
 			<img className="weather_ico" />
-			<div>
+			<div className="current_temp">
 				<h2 className="UnitValue"></h2>
 				<h2 className="UnitType">&deg;C</h2>
 			</div>
