@@ -1,6 +1,8 @@
-@import url("./SearchBar.css");
-@import url("./Temperature.css");
-@import url("./Statistics.css");
+@import "./SearchBar.css";
+@import "./Temperature.css";
+@import "./Statistics.css";
+
+@import "../../theme.css";
 
 .overview {
 	width: 30%;
@@ -29,7 +31,7 @@
 .place_img {
     border-radius: 1vw;
     overflow: hidden;
-    background-image: url("./assets/canada.jpg");
+    background-image: url("../..//assets/canada.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }

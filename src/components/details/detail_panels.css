@@ -1,6 +1,4 @@
-@import url("./uv_index.css");
-
-@import url("./theme.css");
+@import "./uv_index.css";
 
 .highlights > h2 {
     font-size: 1rem;

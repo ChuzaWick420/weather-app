@@ -1,5 +1,5 @@
-@import url("./Overview.css");
-@import url("./Details.css");
+@import "./components/overview/Overview.css";
+@import "./components/details/Details.css";
 
 .main_card {
 	width: 50%;
