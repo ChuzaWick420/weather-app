@@ -63,4 +63,8 @@
     .place_img {
         grid-area: location;
     }
+
+	.details {
+		flex-grow: 1;
+	}
 }

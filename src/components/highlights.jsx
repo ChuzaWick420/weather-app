@@ -21,28 +21,32 @@ export function Highlights() {
 
 				<div className="panel">
 					<p className="stat_name">Wind Speed</p>
-					<p>
-						<span className="value">72</span>
-						<span className="unit">km/h</span>
-					</p>
-					<div>
-						<img src="https://cdn-icons-png.flaticon.com/256/9356/9356230.png" />
-						<span className="place_name"></span>
+					<div className="content_wrapper">
+						<p>
+							<span className="value">72</span>
+							<span className="unit">km/h</span>
+						</p>
+						<div>
+							<img src="https://cdn-icons-png.flaticon.com/256/9356/9356230.png" />
+							<span className="place_name"></span>
+						</div>
 					</div>
 				</div>
 
 				<div className="panel">
 					<p className="stat_name">Sunrise and Suset</p>
-					<div className="sun">
-						<img src="https://cdn1.iconfinder.com/data/icons/weather-from-clouds-line/64/cloud-element-weather-sunrise-sun-up-rise-512.png" />
-						<div className="sun_rise">
-							<span className="sun_time_current">6:49 PM</span>
+					<div className="content_wrapper">
+						<div className="sun">
+							<img src="https://cdn1.iconfinder.com/data/icons/weather-from-clouds-line/64/cloud-element-weather-sunrise-sun-up-rise-512.png" />
+							<div className="sun_rise">
+								<span className="sun_time_current">6:49 PM</span>
+							</div>
 						</div>
-					</div>
-					<div className="sun">
-						<img src="https://cdn-icons-png.flaticon.com/256/3920/3920799.png" />
-						<div className="sun_set">
-							<span className="sun_time_current">6:49 PM</span>
+						<div className="sun">
+							<img src="https://cdn-icons-png.flaticon.com/256/3920/3920799.png" />
+							<div className="sun_set">
+								<span className="sun_time_current">6:49 PM</span>
+							</div>
 						</div>
 					</div>
 				</div>
