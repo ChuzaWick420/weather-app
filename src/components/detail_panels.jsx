@@ -1,8 +1,8 @@
 export function Detail_panel() {
 	return (
 		<div className="panel">
-			<p className="stat_name">Test</p>
 			<div className="content_wrapper">
+				<p className="stat_name">Test</p>
 				<p>
 					<span className="value"></span>
 					<span className="unit">%</span>
