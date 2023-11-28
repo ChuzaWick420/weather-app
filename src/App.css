@@ -1,5 +1,14 @@
-@import "./components/overview/Overview.css";
-@import "./components/details/Details.css";
+@import "./style/Controlbar.css";
+@import "./style/detail_panels.css";
+@import "./style/Details.css";
+@import "./style/Overview.css";
+@import "./style/SearchBar.css";
+@import "./style/Statistics.css";
+@import "./style/Temperature.css";
+@import "./style/uv_index.css";
+@import "./style/weekdays.css";
+
+@import "./theme.css";
 
 .main_card {
 	width: 50%;
@@ -11,11 +20,51 @@
 	overflow: hidden;
 }
 
-/*On hand held devices, the height > width*/
 @media (max-width: 1080px) {
     .main_card {
 		width: 60%;
 		flex-direction: column;
 		aspect-ratio: 3/4;
+	}
+
+    .overview {
+        width: 100%;
+        height: 30%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas: 
+        'search Main_temp'
+        'Big_icon stats'
+        'Big_icon location';
+    }
+
+    .overview > * {
+        justify-self: center;
+    }
+
+    .searchBar {
+        grid-area: search;
+    }
+
+    .overview > .weather_ico {
+        width: 40%;
+        grid-area: Big_icon;
+    }
+
+    .current_temp {
+        grid-area: Main_temp;
+    }
+
+    .stats {
+        grid-area: stats;
+    }
+
+    .place_img {
+        grid-area: location;
+    }
+
+	.details {
+		flex-grow: 1;
 	}
 }

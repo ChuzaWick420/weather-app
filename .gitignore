@@ -24,3 +24,4 @@ dist-ssr
 *.sw?
 
 ./node_modules/*
+./src/test_comp.jsx
