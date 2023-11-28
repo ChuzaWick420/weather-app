@@ -1,14 +1,16 @@
 @import "../theme.css";
 
-.panel:nth-of-type(1) {
+.panel:nth-child(1) > div{
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
 }
 
-.panel:nth-of-type(1) > div {
+.uv_container {
     background-color: gray;
-    flex-grow: 1;
-    /* margin-top: 0; */
+    width: 100%;
+    aspect-ratio: 2;
     border-top-left-radius: 100% 200%;
     border-top-right-radius: 100% 200%;
     position: relative;
