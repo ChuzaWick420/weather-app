@@ -4,6 +4,7 @@
     display: flex;
     gap: 0.2rem;
     color: var(--text-main);
+    font-size: clamp(0.5rem, 0.339rem + 1.29vw, 1.5rem);
 }
 
 .day {
@@ -20,7 +21,7 @@
 
 .day > p {
     margin: 0;
-    font-size: 0.75rem;
+    font-size: 0.75em;
 }
 
 .day > img {
@@ -30,5 +31,5 @@
 
 .low {
     color: var(--text-sub);
-    font-size: 0.6rem;
+    font-size: 0.6em;
 }
