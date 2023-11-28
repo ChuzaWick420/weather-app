@@ -14,7 +14,7 @@
 }
 
 .overview > div {
-	width: 80%;
+	width: 70%;
 	height: fit-content;
 	display: flex;
 }
@@ -27,53 +27,16 @@
 .place_img {
     border-radius: 1vw;
     overflow: hidden;
-    background-image: url("../..//assets/canada.jpg");
+    background-image: url("../assets/canada.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .place_img > p {
-    font-size: 0.75rem;
+    margin: 0;
+    padding: clamp(0.1rem, -0.126rem + 1.806vw, 1.5rem);
+    font-size: 0.75em;
     color: white;
     width: 100%;
     text-align: center;
-}
-
-@media (max-width: 1080px) {
-    .overview {
-        width: 100%;
-        height: 30%;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, 1fr);
-        grid-template-areas: 
-        'search Main_temp'
-        'Big_icon stats'
-        'Big_icon location';
-    }
-
-    .overview > * {
-        justify-self: center;
-    }
-
-    .searchBar {
-        grid-area: search;
-    }
-
-    .overview > .weather_ico {
-        width: 40%;
-        grid-area: Big_icon;
-    }
-
-    .current_temp {
-        grid-area: Main_temp;
-    }
-
-    .stats {
-        grid-area: stats;
-    }
-
-    .place_img {
-        grid-area: location;
-    }
 }

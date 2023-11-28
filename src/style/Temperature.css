@@ -1,9 +1,13 @@
 .UnitValue {
-    font-size: 3rem;
+    font-size: 3em;
     margin: 0;
 }
 
 .UnitType {
     margin: 0;
     text-align: start;
+}
+
+.current_temp {
+    font-size: clamp(0.5rem, 0.339rem + 1.29vw, 1.5rem);
 }
